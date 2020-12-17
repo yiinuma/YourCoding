@@ -1,0 +1,116 @@
+.p-contact {
+    background: $gradient;
+    padding: 63px 0 70px 0;
+
+    .contact-title {
+        padding-bottom: 36px;
+        color: #fff;
+        font-size: 3.2rem;
+        line-height: 1.5;
+        font-weight: bold;
+        text-align: center;
+        @include mq-down(md) {
+            font-size: 2.6rem;
+        }
+
+
+        span {
+            padding-top: 7px;
+            display: block;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+    }
+
+    >p {
+        padding-bottom: 44px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        color: #fff;
+    }
+
+    .form-wrapper {
+        margin: 0 auto;
+        max-width: 908px;
+        width: 90%;
+        background-color: #fff;
+        @include mq-down(sm) {
+            width: 95%;
+        }
+
+        &-inner {
+            padding: 31px 63px 44px 63px;
+        @include mq-down(sm) {
+            padding: 31px 3% 44px 3%;
+        }
+
+            .form {
+                .form-title {
+                    .form-label {
+                        padding-right: 24px;
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        line-height: 30px;
+                    }
+
+                    span {
+                        padding: 5px 16px 5px 16px;
+                        display: inline-block;
+                        background-color: #0C449B;
+                        border-radius: 10px;
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        line-height: 20px;
+                        color: #fff;
+                    }
+                }
+
+                .form-input {
+                    &.name {
+                        margin-top: 39px;
+                        margin-bottom: 27px;
+                        width: 100%;
+                        max-width: 499px;
+                        min-height: 43px;
+                        padding: 0.3rem 0.5rem;
+                        background-color: #EEFBFB;
+                        border-radius: 3px;
+                        border: none;
+                        font-size: 1.6rem;
+                    }
+
+                    &.mail {
+                        @extend .form-input.name;
+                        margin-bottom: 21px;
+                    }
+                }
+
+                .form-textarea {
+                    @extend .form-input.name;
+                    margin-top: 39px;
+                    margin-bottom: 27px;
+                    min-width: 100%;
+                    min-height: 179px;
+                }
+            }
+
+            .form-check {
+                margin-bottom: 30px;
+                display: block;
+                text-align: center;
+            }
+
+            .submit-btn {
+                text-align: center;
+            }
+
+            .end-message,
+            .false-message {
+                text-align: center;
+                display: none;
+            }
+        }
+    }
+}

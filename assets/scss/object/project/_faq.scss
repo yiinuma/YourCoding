@@ -1,0 +1,49 @@
+.p-faq {
+    margin-bottom: 86px;
+
+    .faq-title {
+        padding-top: 59px;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+        @include mq-down(md) {
+            font-size: 2.6rem;
+        }
+        span {
+            margin-top: 11px;
+            display: block;
+            font-size: 1.6rem;
+            color: $sub-ttl-color;
+        }
+
+    }
+
+    .faq-inner {
+        max-width: 907px;
+        margin: 0 auto;
+        padding-top: 32px;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+        .faq-q {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+            line-height: 1.8;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #E5E5E5;
+            padding: 18px 0 20px 0;
+        }
+
+        .faq-a {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            line-height: 1.8;
+            background-color: #F2F2F2;
+            border: 1px solid #E5E5E5;
+            padding: 24px 45px;
+        @include mq-down(sm) {
+            padding: 20px 20px;
+        }
+        }
+    }
+}

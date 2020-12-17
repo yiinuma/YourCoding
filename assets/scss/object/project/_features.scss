@@ -1,0 +1,149 @@
+.p-features {
+
+    .feature-title {
+        margin-top: 80px;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+
+        @include mq-down(md) {
+            font-size: 2.6rem;
+        }
+
+        span {
+            margin-top: 20px;
+            display: block;
+            font-size: 1.6rem;
+            color: $sub-ttl-color;
+        }
+    }
+
+    .feature-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .feature-heading {
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-align: center;
+
+            @include mq-down(md) {
+                font-size: 2.6rem;
+            }
+
+            &.coding-title {
+                margin-top: 57px;
+                margin-bottom: 59px;
+            }
+
+            &.mark-title {
+                margin-top: 86px;
+                margin-bottom: 59px;
+            }
+
+            &.message-title {
+                margin-top: 136px;
+                margin-bottom: 62px;
+            }
+            @include mq-down(md) {
+                &.coding-title,
+                &.mark-title,
+                &.message-title{
+                    margin: 50px 0 20px;
+                }
+
+            }
+        }
+
+        .feature-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include mq-down(md) {
+                &:nth-of-type(odd) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                &:nth-of-type(even) {
+                    flex-direction: column-reverse;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mark-desc {
+            margin-left: 88px;
+
+            @include mq-down(md) {
+                margin-left: 0;
+            }
+            @include mq-down(sm) {
+                br{
+                    display: none;
+                }
+            }
+        }
+
+        .message-desc {
+            margin-right: 89px;
+
+            @include mq-down(md) {
+                margin-right: 0;
+            }
+
+        }
+
+        img {
+            vertical-align: bottom;
+
+            &.coding-image {
+                margin-left: 59px;
+                width: 380px;
+
+                @include mq-down(md) {
+                    margin-left: 0;
+                }
+
+                &.mark-image {
+                    width: 479px;
+                }
+
+                &.message-image {
+                    margin-left: 59px;
+                    width: 400px;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 1.8;
+            @include mq-down(md) {
+            font-size: 2rem;
+            }
+        }
+
+        .coding-desc h3 {
+            margin-bottom: 45px;
+        }
+
+        .mark-desc h3 {
+            margin-bottom: 40px;
+        }
+
+        .message-desc h3 {
+            margin-bottom: 33px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: bold;
+            @include mq-down(md) {
+                font-size: 1.4rem;
+                }
+        }
+    }
+}

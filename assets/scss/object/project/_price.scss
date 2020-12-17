@@ -1,0 +1,95 @@
+.p-price {
+    background-color: $bg-color;
+    margin-top: 154px;
+
+    @include mq-down(sm) {
+        margin-top: 50px;
+    }
+
+    .price-title {
+        padding-top: 59px;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+
+        @include mq-down(md) {
+            font-size: 2.6rem;
+        }
+
+        @include mq-down(sm) {
+            padding-top: 30px;
+        }
+
+        span {
+            margin-top: 11px;
+            display: block;
+            font-size: 1.6rem;
+            color: $sub-ttl-color;
+        }
+    }
+
+    .price-inner {
+        margin: 0 auto;
+        margin-top: 70px;
+        max-width: 926px;
+
+        @include mq-down(md) {
+            margin: 30px 1% 0 1%;
+        }
+
+        table {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            background-color: #fff;
+            border-collapse: collapse;
+            font-size: 1.6rem;
+            font-weight: bold;
+            width: 100%;
+
+            @include mq-down(sm) {
+                font-size: 1.5rem;
+            }
+
+            br {
+                display: none;
+
+                @include mq-down(md) {
+                    display: inherit;
+                }
+            }
+
+            th {
+                width: 30%;
+                padding: 35px 19px;
+                // min-width: 300px;
+                border: 1px solid #E5E5E5;
+
+                @include mq-down(sm) {
+                    width: 55%;
+                }
+            }
+
+            td {
+                width: 70%;
+                padding-left: 30px;
+                border: 1px solid #E5E5E5;
+
+                @include mq-down(sm) {
+                    width: 45%;
+                }
+
+            }
+
+        }
+
+        p {
+            text-align: center;
+            padding-top: 36px;
+            padding-bottom: 68px;
+
+            @include mq-down(sm) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}

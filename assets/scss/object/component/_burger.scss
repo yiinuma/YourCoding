@@ -1,0 +1,53 @@
+// burger
+
+$burger-height: 50px;
+$burger-width: 50px;
+
+.c-burger {
+  display: none;
+  height: $burger-height;
+  width: $burger-width;
+  padding: 12px;
+  transition: 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-color: $sub-ttl-color;
+    transition: 0.3s;
+  }
+
+  @include mq-down(md) {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top:2px;
+    right: 12px;
+  
+
+    &.is_active {
+      background-color: $sub-ttl-color;
+
+      .c-burger__line {
+        background-color: #fff;
+      }
+
+      .c-burger__line:first-of-type {
+        transform: rotate(-45deg) translate(-7px, 7px);
+      }
+
+      .c-burger__line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .c-burger__line:last-of-type {
+        transform: rotate(-135deg) translate(5px, 6px);
+      }
+    }
+  }
+}

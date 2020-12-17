@@ -1,0 +1,9 @@
+.l-main {
+    padding-top: 94px;
+    margin: 0 auto;
+
+    @include mq-down(md) {
+        margin: 0 2%;
+        padding-top: 55px;
+    }
+}

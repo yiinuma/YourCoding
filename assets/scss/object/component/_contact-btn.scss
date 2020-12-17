@@ -1,0 +1,25 @@
+.c-contact-btn {
+    width: 155px;
+    height: 37px;
+    background: $btn-color;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 37px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+    @include mq-down(md) {
+        display: none;
+    }
+}
+
+.c-form-submit-btn {
+    @extend .c-contact-btn;
+
+    @include mq-down(md) {
+        display: inline-block;
+    }
+
+}

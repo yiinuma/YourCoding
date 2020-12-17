@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $txt-color;
+  font-size: $font-size;
+  font-family: $font-jp;
+  font-weight: $font-weight;
+  line-height: $line-height-txt;
+  letter-spacing: $letter-spacing-txt;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $line-height-ttl;
+  letter-spacing: $letter-spacing-ttl;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+

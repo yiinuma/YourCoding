@@ -1,0 +1,104 @@
+.p-main-visual {
+  position: relative;
+  max-width: 1022px;
+  height: 674px;
+  margin: 0 auto;
+  overflow: visible;
+
+  @include mq-down(md) {
+    height: 524px;
+  }
+  @include mq-down(md) {
+    height: 100%;
+  }
+
+  .main-visual {
+    position: absolute;
+
+    &.circle {
+      z-index: -1;
+      top: -131px;
+      right: -255px;
+      width: 708px;
+
+      @include mq-down(md) {
+        top: -200px;
+      }
+
+      @include mq-down(sm) {
+        display: none;
+      }
+    }
+
+    &.human {
+      top: 130px;
+      right: 172px;
+      right: 0px;
+      width: 518px;
+      height: auto;
+
+      @include mq-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  .main-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1022px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 159px;
+    padding-left: 20px;
+
+    @include mq-down(sm) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 0;
+      background: #F8F8F8;
+    }
+
+  }
+
+  .main-copy {
+    text-align: left;
+    z-index: 100;
+
+    @include mq-down(sm) {
+      width: 100%;
+      text-align: center;
+
+    }
+
+
+    h2 {
+      margin-bottom: 44px;
+      font-size: 3.2rem;
+      line-height: 46px;
+      font-weight: bold;
+
+      @include mq-down(md) {
+        font-size: 2.4rem;
+        line-height: 1.5;
+      }
+    }
+
+    p {
+      margin-bottom: 45px;
+      font-size: 1.6rem;
+      line-height: 24px;
+      font-weight: bold;
+
+      @include mq-down(md) {
+        font-size: 1.6rem;
+
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+}
