@@ -8,7 +8,7 @@
   @include mq-down(md) {
     height: 524px;
   }
-  @include mq-down(md) {
+  @include mq-down(sm) {
     height: 100%;
   }
 
@@ -56,7 +56,7 @@
       padding-top: 30px;
       padding-bottom: 30px;
       padding-left: 0;
-      background: #F8F8F8;
+      background: $gradient;
     }
 
   }
